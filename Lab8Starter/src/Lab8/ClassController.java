@@ -61,7 +61,11 @@ public class ClassController
 	//TODO implement
 	public void setClassName(String aName)
 	{
-		myModel.setClassName(aName);
+		if (aName.length() > 0) {
+			myModel.setClassName(aName);
+		} else {
+			myModel.setClassName("NoValidNameSet");
+		}
 	}
 	
 	
@@ -95,7 +99,11 @@ public class ClassController
 	//TODO implement
 	public void setClassNumber(int aNumber)
 	{
-		myModel.setClassNumber(aNumber);
+		if (aNumber > MIN_COURSE_NUM && aNumber < MAX_COURSE_NUM && String.valueOf(aNumber).length() == COURSE_NUM_LENGTH) {
+			myModel.setClassNumber(aNumber);
+		} else {
+			myModel.setClassNumber(0000);
+		}
 	}
 	
 	
@@ -128,7 +136,11 @@ public class ClassController
 	//TODO implement
 	public void setClassDPT(String aClassDPT)
 	{
-		myModel.setClassDPT(aClassDPT);
+		if (aClassDPT.length() == COURSE_DPT_LENGTH) {
+			myModel.setClassDPT(aClassDPT);
+		} else {
+			myModel.setClassDPT("XXXX");
+		}
 	}
 	
 	
