@@ -44,7 +44,7 @@ public class ClassController
 	//TODO implement
 	public String getClassName()
 	{
-
+		return myModel.getClassName();
 	}
 	
 	
@@ -61,7 +61,7 @@ public class ClassController
 	//TODO implement
 	public void setClassName(String aName)
 	{
-
+		myModel.setClassName(aName);
 	}
 	
 	
@@ -77,7 +77,7 @@ public class ClassController
 	//TODO implement
 	public int getClassNumber()
 	{
-
+		return myModel.getClassNumber();
 	}
 	
 	
@@ -95,7 +95,7 @@ public class ClassController
 	//TODO implement
 	public void setClassNumber(int aNumber)
 	{
-
+		myModel.setClassNumber(aNumber);
 	}
 	
 	
@@ -111,7 +111,7 @@ public class ClassController
 	//TODO implement
 	public String getClassDPT()
 	{
-
+		myModel.getClassDPT();
 	}
 	
 	
@@ -128,7 +128,7 @@ public class ClassController
 	//TODO implement
 	public void setClassDPT(String aClassDPT)
 	{
-
+		myModel.setClassDPT(aClassDPT);
 	}
 	
 	

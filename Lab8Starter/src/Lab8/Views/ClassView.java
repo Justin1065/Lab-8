@@ -28,7 +28,10 @@ public class ClassView
 	 */
 	public void printClassInformation(String aClassName, int aClassNumber, String aClassDPT)
 	{
-
+		System.out.println("Class Details:");
+    	System.out.println("Name: " + aClassName);
+    	System.out.println("Class Number: " + aClassNumber);
+    	System.out.println("Class Department: " + aClassDPT);
 	}
 	
 }
