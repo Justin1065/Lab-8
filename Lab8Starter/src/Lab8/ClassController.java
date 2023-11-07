@@ -111,7 +111,7 @@ public class ClassController
 	//TODO implement
 	public String getClassDPT()
 	{
-		myModel.getClassDPT();
+		return myModel.getClassDPT();
 	}
 	
 	
